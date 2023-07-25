@@ -14,6 +14,7 @@
 ## Files:card_file_box:
 
 ### [0. Basic setup](./task_0)
+### [1. Learning how to use Webpack with a config file](./task_1)
 
 
 
