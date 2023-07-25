@@ -13,7 +13,7 @@
 
 ## Files:card_file_box:
 
-### [0x00. Webpack](./0x00-Webpack)
+### [0. Basic setup](./task_0)
 
 
 
