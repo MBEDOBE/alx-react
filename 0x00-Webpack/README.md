@@ -16,6 +16,7 @@
 ### [0. Basic setup](./task_0)
 ### [1. Learning how to use Webpack with a config file](./task_1)
 ### [2. Adding CSS & Images](./task_2)
+### [3. Dev servers, modules, and tree shaking](./task_3)
 
 
 
