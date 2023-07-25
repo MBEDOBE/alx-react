@@ -1,12 +1,8 @@
-# 0x00. Webpack
+# ReactJs
 
 ## Description:bulb:
 
-- How to setup Webpack for a basic project
-- Entry points, output, and loaders
-- How to add plugins
-- How to split your code into chunks
-- How to setup a dev server
+ Contains projects on ReactJs as part of the ALX-Software Engineering program
 
 
 ---
@@ -14,6 +10,7 @@
 ## Files:card_file_box:
 
 ### [0x00. Webpack](./0x00-Webpack)
+### [0x01. React intro](./0x01-react_intro)
 
 
 
