@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Zelipha.github.io/alx-react",
+  "homepage": "http://Mbedobe.github.io/alx-react",
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
@@ -39,6 +39,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^5.0.0"
   }
 }
