@@ -14,7 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --base-href '/0x01-react_intro/task_4'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
