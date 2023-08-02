@@ -28,7 +28,11 @@ export default class App extends Component {
             <Notifications listNotifications={listNotifications} />
             <Header />
           </div>
-          {isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
+          {this.props.isLoggedIn ? (
+            <CourseList listCourses={this.listCourses} />
+          ) : (
+            <Login />
+          )}
           <Footer />
         </div>
       </React.Fragment>
