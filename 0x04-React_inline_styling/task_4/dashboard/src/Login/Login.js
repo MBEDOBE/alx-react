@@ -7,22 +7,18 @@ function Login() {
       <div className={css(styles['App-body'])}>
         <p>Login to access the full dashboard</p>
         <form>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              className={css(styles.input)}
-              type="email"
-              name="email"
-            ></input>
-          </div>
-          <div>
-            <label htmlFor="password">Password:</label>
-            <input
-              className={css(styles.input)}
-              type="password"
-              name="password"
-            ></input>
-          </div>
+          <label htmlFor="email">Email:</label>
+          <input
+            className={css(styles.input)}
+            type="email"
+            name="email"
+          ></input>
+          <label htmlFor="password">Password:</label>
+          <input
+            className={css(styles.input)}
+            type="password"
+            name="password"
+          ></input>
           <button>OK</button>
         </form>
       </div>
