@@ -44,7 +44,11 @@
     "react-dom": "^18.0.0"
   },
   "jest": {
+    "testEnvironment": "jsdom",
     "setupFiles": [
+      "<rootDir>/config/setupTests.js"
+    ],
+    "setupFilesAfterEnv": [
       "<rootDir>/config/setupTests.js"
     ],
     "moduleNameMapper": {

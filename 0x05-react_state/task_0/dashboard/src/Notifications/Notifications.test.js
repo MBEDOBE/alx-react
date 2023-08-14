@@ -55,7 +55,7 @@ describe('<Notifications />', () => {
       ];
     });
 
-    it('Notifications renders Notification Items and items have correct html', () => {
+    it(' renders Notification Items and items have correct html', () => {
       const wrapper = mount(
         <Notifications displayDrawer listNotifications={listNotifications} />
       );
