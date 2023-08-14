@@ -22,7 +22,7 @@ const listNotifications = [
   { id: 3, type: "urgent", html: { __html: getLatestNotification() } },
 ];
 
-document.body.style.margin = 0;
+
 
 class App extends Component {
   constructor(props) {
