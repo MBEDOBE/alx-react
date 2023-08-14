@@ -3,7 +3,7 @@ import React from 'react';
 import BodySection from './BodySection';
 import { StyleSheetTestUtils } from 'aphrodite';
 
-describe('<BodySectionWithMarginBottom />', () => {
+describe('<BodySection />', () => {
   beforeAll(() => {
     StyleSheetTestUtils.suppressStyleInjection();
   });
