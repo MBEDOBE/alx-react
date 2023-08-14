@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import Notifications from '../Notifications/Notifications';
-import Header from '../Header/Header';
-import BodySection from '../BodySection/BodySection';
-import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBottom';
-import Login from '../Login/Login';
-import CourseList from '../CourseList/CourseList';
-import Footer from '../Footer/Footer';
-import PropTypes from 'prop-types';
-import { getLatestNotification } from '../utils/utils';
-import { StyleSheet, css } from 'aphrodite';
+import React, { Component } from "react";
+import Notifications from "../Notifications/Notifications";
+import Header from "../Header/Header";
+import BodySection from "../BodySection/BodySection";
+import BodySectionWithMarginBottom from "../BodySection/BodySectionWithMarginBottom";
+import Login from "../Login/Login";
+import CourseList from "../CourseList/CourseList";
+import Footer from "../Footer/Footer";
+import PropTypes from "prop-types";
+import { getLatestNotification } from "../utils/utils";
+import { StyleSheet, css } from "aphrodite";
 
 const listCourses = [
-  { id: 1, name: 'ES6', credit: 60 },
-  { id: 2, name: 'Webpack', credit: 20 },
-  { id: 3, name: 'React', credit: 40 },
+  { id: 1, name: "ES6", credit: 60 },
+  { id: 2, name: "Webpack", credit: 20 },
+  { id: 3, name: "React", credit: 40 },
 ];
 
 const listNotifications = [
-  { id: 1, type: 'default', value: 'New course available' },
-  { id: 2, type: 'urgent', value: 'New resume available' },
-  { id: 3, type: 'urgent', html: { __html: getLatestNotification() } },
+  { id: 1, type: "default", value: "New course available" },
+  { id: 2, type: "urgent", value: "New resume available" },
+  { id: 3, type: "urgent", html: { __html: getLatestNotification() } },
 ];
 
-// document.body.style.margin = 0;
+document.body.style.margin = 0;
 
 class App extends Component {
   constructor(props) {
@@ -34,8 +34,8 @@ class App extends Component {
   }
 
   handleKeyCombination(e) {
-    if (e.key === 'h' && e.ctrlKey) {
-      alert('Logging you out');
+    if (e.key === "h" && e.ctrlKey) {
+      alert("Logging you out");
       this.props.logOut();
     }
   }
@@ -49,11 +49,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener('keydown', this.handleKeyCombination);
+    document.addEventListener("keydown", this.handleKeyCombination);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('keydown', this.handleKeyCombination);
+    document.removeEventListener("keydown", this.handleKeyCombination);
   }
 
   render() {
@@ -118,18 +118,18 @@ App.propTypes = {
 };
 
 const cssVars = {
-  mainColor: '#e01d3f',
+  mainColor: "#e01d3f",
 };
 
 const screenSize = {
-  small: '@media screen and (max-width: 900px)',
+  small: "@media screen and (max-width: 900px)",
 };
 
 const styles = StyleSheet.create({
   container: {
-    width: 'calc(100% - 16px)',
-    marginLeft: '8px',
-    marginRight: '8px',
+    width: "calc(100% - 16px)",
+    marginLeft: "8px",
+    marginRight: "8px",
   },
 
   app: {
@@ -137,20 +137,20 @@ const styles = StyleSheet.create({
   },
 
   appBody: {
-    display: 'flex',
-    justifyContent: 'center',
+    display: "flex",
+    justifyContent: "center",
   },
 
   footer: {
     borderTop: `3px solid ${cssVars.mainColor}`,
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    position: 'fixed',
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    position: "fixed",
     bottom: 0,
-    fontStyle: 'italic',
+    fontStyle: "italic",
     [screenSize.small]: {
-      position: 'static',
+      position: "static",
     },
   },
 });

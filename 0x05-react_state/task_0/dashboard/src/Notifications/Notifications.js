@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import NotificationItem from './NotificationItem';
-import PropTypes from 'prop-types';
-import NotificationItemShape from './NotificationItemShape';
-import closeIcon from '../assets/close-icon.png';
-import { StyleSheet, css } from 'aphrodite';
+import React, { Component } from "react";
+import NotificationItem from "./NotificationItem";
+import PropTypes from "prop-types";
+import NotificationItemShape from "./NotificationItemShape";
+import closeIcon from "../assets/close-icon.png";
+import { StyleSheet, css } from "aphrodite";
 
 class Notifications extends Component {
   constructor(props) {
@@ -48,9 +48,9 @@ class Notifications extends Component {
           <div className={css(styles.notifications)} id="Notifications">
             <button
               style={{
-                background: 'transparent',
-                border: 'none',
-                position: 'absolute',
+                background: "transparent",
+                border: "none",
+                position: "absolute",
                 right: 20,
               }}
               aria-label="close"
@@ -104,11 +104,11 @@ Notifications.propTypes = {
 };
 
 const cssVars = {
-  mainColor: '#e01d3f',
+  mainColor: "#e01d3f",
 };
 
 const screenSize = {
-  small: '@media screen and (max-width: 900px)',
+  small: "@media screen and (max-width: 900px)",
 };
 
 const opacityKeyframes = {
@@ -122,91 +122,91 @@ const opacityKeyframes = {
 };
 
 const translateYKeyframes = {
-  '0%': {
-    transform: 'translateY(0)',
+  "0%": {
+    transform: "translateY(0)",
   },
 
-  '50%': {
-    transform: 'translateY(-5px)',
+  "50%": {
+    transform: "translateY(-5px)",
   },
 
-  '75%': {
-    transform: 'translateY(5px)',
+  "75%": {
+    transform: "translateY(5px)",
   },
 
-  '100%': {
-    transform: 'translateY(0)',
+  "100%": {
+    transform: "translateY(0)",
   },
 };
 
 const borderKeyframes = {
-  '0%': {
+  "0%": {
     border: `3px dashed deepSkyBlue`,
   },
 
-  '100%': {
+  "100%": {
     border: `3px dashed ${cssVars.mainColor}`,
   },
 };
 
 const styles = StyleSheet.create({
   menuItem: {
-    float: 'right',
-    backgroundColor: '#fff8f8',
-    ':hover': {
-      cursor: 'pointer',
+    float: "right",
+    backgroundColor: "#fff8f8",
+    ":hover": {
+      cursor: "pointer",
       animationName: [opacityKeyframes, translateYKeyframes],
-      animationDuration: '1s, 0.5s',
+      animationDuration: "1s, 0.5s",
       animationIterationCount: 3,
     },
   },
 
   menuItemPNoShow: {
-    marginRight: '8px',
-    display: 'none',
+    marginRight: "8px",
+    display: "none",
   },
 
   menuItemPShow: {
-    marginRight: '8px',
+    marginRight: "8px",
   },
 
   notifications: {
-    float: 'right',
+    float: "right",
     // border: `3px dashed ${cssVars.mainColor}`,
-    padding: '10px',
-    marginBottom: '20px',
+    padding: "10px",
+    marginBottom: "20px",
     animationName: [borderKeyframes],
-    animationDuration: '0.8s',
+    animationDuration: "0.8s",
     animationIterationCount: 1,
-    animationFillMode: 'forwards',
-    ':hover': {
+    animationFillMode: "forwards",
+    ":hover": {
       border: `3px dashed deepSkyBlue`,
       // animationFillMode: "forwards",
     },
     [screenSize.small]: {
-      float: 'none',
-      border: 'none',
-      listStyle: 'none',
+      float: "none",
+      border: "none",
+      listStyle: "none",
       padding: 0,
-      fontSize: '20px',
-      ':hover': {
-        border: 'none',
+      fontSize: "20px",
+      ":hover": {
+        border: "none",
         // animationFillMode: "forwards",
       },
-      position: 'absolute',
-      background: 'white',
-      height: '110vh',
-      width: '100vw',
+      position: "absolute",
+      background: "white",
+      height: "110vh",
+      width: "100vw",
     },
   },
 
   notificationsButtonImage: {
-    width: '10px',
+    width: "10px",
   },
 
   notificationsP: {
     margin: 0,
-    marginTop: '15px',
+    marginTop: "15px",
   },
 
   notificationsUL: {
