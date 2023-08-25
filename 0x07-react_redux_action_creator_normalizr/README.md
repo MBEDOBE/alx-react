@@ -3,34 +3,32 @@
 ## Description:bulb:
 
 - Normalizr’s purpose and how to use it
-schemas and normalization of nested JSON
-core concepts of Redux
-Redux actions
-Redux action creators
-async actions in Redux
-how to write tests for Redux
+- schemas and normalization of nested JSON
+- core concepts of Redux
+- Redux actions
+- Redux action creators
+- async actions in Redux
+- how to write tests for Redux
 
 ---
 
 ## Files:card_file_box:
 
-### [0. Converting into an Immutable object using fromJS](./0-fromjs.js)
+### [0. Read data from a JSON](./task_0)
 
-### [1. Converting into Immutable using Map](./1-map.js)
+### [1. Normalize a nested JSON](./task_1)
 
-### [2. Accessing nested elements](./2-nested.js)
+### [2. Filter a normalized Schema](./task_2)
 
-### [3. List and push](./3-list.js)
+### [3. Create actions for the course list](./task_3)
 
-### [4. Chained mutations](./4-mutations.js)
+### [4. Create actions for the UI](./task_4)
 
-### [5. Merge & concat](./5-merge.js)
+### [5. Create actions for the notification list](./task_5)
 
-### [6. Nested merge](./6-deeply.js)
+### [6. Bound the actions](./task_6)
 
-### [7. Equality](./7-equality.js)
-
-### [8. Lazy Seq](./8-seq.js)
+### [7. Async Action Creators](./task_7)
 
 ## Author
 
