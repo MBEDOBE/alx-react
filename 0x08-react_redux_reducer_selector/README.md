@@ -1,34 +1,29 @@
-# 0x07. React Redux action creator+normalizr
+# 0x08. React Redux reducer+selector
 
 ## Description:bulb:
 
-- Normalizr’s purpose and how to use it
-- schemas and normalization of nested JSON
-- core concepts of Redux
-- Redux actions
-- Redux action creators
-- async actions in Redux
-- how to write tests for Redux
+- The purpose of a reducer and the role it plays within your application
+- Why a reducer should stay as pure as possible
+- Why mutations should not happen within a reducer
+- The use of Immutable within the reducer
+- The use of Normalizr within the app
+- Selectors: what they are and when to use them
 
 ---
 
 ## Files:card_file_box:
 
-### [0. Read data from a JSON](./task_0)
+### [0. Write a basic reducer](./task_0)
 
-### [1. Normalize a nested JSON](./task_1)
+### [1. Use Immutable for the UI Reducer](./task_1)
 
-### [2. Filter a normalized Schema](./task_2)
+### [2. Create a reducer for Courses](./task_2)
 
-### [3. Create actions for the course list](./task_3)
+### [3. Create the reducer for notifications](./task_3)
 
-### [4. Create actions for the UI](./task_4)
+### [4. Normalizr & Immutable](./task_4)
 
-### [5. Create actions for the notification list](./task_5)
-
-### [6. Bound the actions](./task_6)
-
-### [7. Async Action Creators](./task_7)
+### [5. Selectors](./task_5)
 
 ## Author
 
